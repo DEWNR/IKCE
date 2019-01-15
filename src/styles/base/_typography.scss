@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+
+  .fonts-loaded & {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: serif;
+
+  .fonts-loaded & {
+    font-family: adelle-condensed, serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+}
+
+.fonts-loaded .proxima {
+  font-family: proxima-nova-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
