@@ -11,9 +11,43 @@
 
 /* 1. Colors
    ========================================================================== */
-$color-brand: #00534C;
-$color-turquoise: #00B398;
-$color-lime: #78D64B;
+$color-brand: #13524e;
+$color-turquoise: #11b09b;
+$color-green: #7bc24e;
+$color-lime: #cddc28;
+$color-black: #212222;
+
+// Tints
+$color-brand--20: #c2ccca;
+$color-brand--40: #90a2a1;
+$color-brand--60: #668380;
+$color-brand--80: #3D6864;
+
+$color-turquoise--20: #d6ebe6;
+$color-turquoise--40: #afdad2;
+$color-turquoise--60: #88cabe;
+$color-turquoise--80: #5cbdac;
+
+$color-green--20: #e1f0d7;
+$color-green--40: #c9e3b3;
+$color-green--60: #afd792;
+$color-green--80: #95cc6f;
+
+$color-lime--20: #f3f7d5;
+$color-lime--40: #e9efae;
+$color-lime--60: #dfe787;
+$color-lime--80: #d6e25b;
+
+$color-black--20: #bdbaba;
+$color-black--40: #8d8989;
+$color-black--60: #63605f;
+$color-black--80: #413f3e;
+
+// Override bulma colors with our project colors
+$primary: $color-brand;
+$turquoise: $color-turquoise;
+$green: $color-green;
+$black: $color-black;
 
 /* 2. Typography
    ========================================================================== */
@@ -24,6 +58,7 @@ $safe-sans-serif: sans-serif;
 $custom-sans-serif: 'Open Sans', sans-serif;
 
 $font-proxima: proxima-nova-condensed, sans-serif;
+$fa-font-path: '/fonts';
 
 /* 3. Spacing
    ========================================================================== */
@@ -32,3 +67,18 @@ $global-spacing-unit-small: $global-spacing-unit / 2;
 $global-spacing-unit-tiny: $global-spacing-unit-small / 2;
 $global-spacing-unit-large: $global-spacing-unit + $global-spacing-unit-small;
 $global-spacing-unit-huge: $global-spacing-unit * 2;
+
+$section-padding: 1.5rem 1.5rem;
+$column-gap: 1000px;
+
+
+/* 4. Responsiveness
+   ========================================================================== */
+$mq-breakpoints: (
+  tablet: $tablet,
+  desktop: $desktop,
+  widescreen: $widescreen,
+  fullhd: $fullhd
+) !default;
+
+@import '../../../node_modules/sass-mq/mq';

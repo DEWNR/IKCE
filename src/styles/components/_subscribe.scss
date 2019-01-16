@@ -1,0 +1,34 @@
+/* ==========================================================================
+   Subscribe
+   ========================================================================== */
+
+.c-subscribe {
+  background: rgba($color-black, 0.9);
+  color: findColorInvert($color-black);
+  padding: $global-spacing-unit $global-spacing-unit-small;
+  display: flex;
+  align-items: center;
+
+  &__text {
+    @include font-loader($safe-serif, $custom-serif);
+
+    font-size: $size-4;
+  }
+
+  .input {
+    margin: 0 $global-spacing-unit-tiny;
+    border: 0;
+    flex: auto;
+  }
+
+  .button {
+    color: $white;
+    border-color: $white;
+    width: 74px;
+
+    &:hover {
+      background-color: $white;
+      color: rgba($color-black, 0.9);
+    }
+  }
+}

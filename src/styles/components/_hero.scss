@@ -1,0 +1,11 @@
+.c-hero {
+  padding-top: 30vh;
+  background-size: cover;
+
+  &__callout {
+    text-align: center;
+    background-color: rgba($color-green, 0.9);
+    color: findColorInvert($color-green);
+    margin-bottom: $global-spacing-unit-small;
+  }
+}

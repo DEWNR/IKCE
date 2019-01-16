@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Social
+   ========================================================================== */
+
+.c-social {
+  padding: $global-spacing-unit $global-spacing-unit-small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // flex-direction: column;
+
+  &__text {
+    @include font-loader($safe-serif, $custom-serif);
+
+    font-size: $size-4;
+  }
+
+  &__icons .fab {
+    color: $white;
+  }
+
+  .c-hero & {
+    background-color: $color-brand;
+    color: $white;
+
+    @include mq($from: desktop) {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+}

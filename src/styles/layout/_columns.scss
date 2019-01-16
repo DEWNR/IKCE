@@ -1,0 +1,5 @@
+.columns {
+  &:not(:first-child) {
+    margin-top: 0;
+  }
+}

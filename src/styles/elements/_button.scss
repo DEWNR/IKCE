@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Button
+   ========================================================================== */
+
+.button {
+  @include font-loader($safe-sans-serif, $font-proxima);
+
+  text-transform: uppercase;
+  line-height: 1.6;
+  border-radius: 0;
+  border-width: 2px;
+
+  &.is-turquoise {
+    background-color: $color-turquoise;
+    color: $turquoise-invert;
+  }
+
+  &.is-green {
+    background-color: $color-green;
+    color: $green-invert;
+  }
+
+  &.is-large {
+    border-width: 3px;
+  }
+
+  &.is-transparent {
+    background-color: transparent;
+  }
+}
