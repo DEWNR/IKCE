@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+
+/**
+ * font-loader
+ *
+ * - Automatically generates a fallback for if custom fonts haven't loaded
+ *   to prevent any font flashing
+ *
+*/
+
+@mixin font-loader($safe-family, $custom-family) {
+  .fonts-loaded & {
+    font-family: $custom-family;
+  }
+
+  font-family: $safe-family;
+}

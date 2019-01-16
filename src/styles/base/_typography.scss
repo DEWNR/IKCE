@@ -1,10 +1,12 @@
-body {
-  font-family: sans-serif;
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+body,
+p,
+span {
+  @include font-loader($safe-sans-serif, $custom-sans-serif);
 
-  .fonts-loaded & {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-  }
+  font-weight: 300;
 }
 
 h1,
@@ -13,17 +15,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: serif;
+  @include font-loader($safe-serif, $custom-serif);
 
-  .fonts-loaded & {
-    font-family: adelle-condensed, serif;
-    font-weight: 600;
-    font-style: normal;
-  }
+  font-weight: 600;
 }
 
-.fonts-loaded .proxima {
-  font-family: proxima-nova-condensed, sans-serif;
+.proxima {
+  @include font-loader($safe-sans-serif, $font-proxima);
+
   font-weight: 700;
-  font-style: normal;
 }
