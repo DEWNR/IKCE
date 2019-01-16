@@ -40,3 +40,4 @@ Build based on [webpack-gulp-boilerplate by shalachev](https://github.com/shalac
 ## TODO
 * Build a site
 * Revise revving/hashing for gulp task (there has to be a cleaner way)
+* Add purgecss to reduce bloat of bulma and fontawesome
