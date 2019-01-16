@@ -130,7 +130,7 @@ const handleTemplates = () => gulp
   .pipe(nunjucksRender({
     path: handlePath(paths.src, '/templates/'),
     envOptions: {
-      watch: false
+      noCache: true
     }
   }))
   .pipe(gulp.dest(handleNodeEnvPath(paths.dev, paths.build)));
@@ -211,7 +211,7 @@ const handleImageOptimization = () => gulp
  * Handle fonts
  */
 const handleFonts = () => gulp
-  .src([handlePath(paths.src, '/fonts/**/*')])
+  .src([handlePath(paths.src, '/fonts/**/*'), '../node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.*'])
   .pipe(gulp.dest(handleNodeEnvPath(
     handlePath(paths.dev, '/fonts'),
     handlePath(paths.build, '/fonts')

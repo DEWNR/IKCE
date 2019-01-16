@@ -4,13 +4,24 @@
 
 /* Bulma
    ========================================================================== */
-@import "../../node_modules/bulma/bulma.sass";
+@import "../../node_modules/bulma/sass/utilities/_all";
+@import "../../node_modules/bulma/sass/base/_all";
+@import "../../node_modules/bulma/sass/components/_all";
+@import "../../node_modules/bulma/sass/elements/_all";
+@import "../../node_modules/bulma/sass/grid/_all";
+@import "../../node_modules/bulma/sass/layout/_all";
 
 /* Koala
-========================================================================== */
+   ========================================================================== */
 @import "./utilities/all";
 @import "./base/all";
 @import "./layout/all";
 @import "./grid/all";
 @import "./components/all";
 @import "./elements/all";
+
+/* Fontawesome
+   ========================================================================== */
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+
