@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{% if page.title %}{{ page.title }} - {% endif %} Adelaide Gaol</title>
+  <title>{% if page.title %}{{ page.title }} - {% endif %} International Koala Centre of Excellence</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -25,7 +25,7 @@
 </head>
 <body class="{% if page.bodyClass %}{{ page.bodyClass }}{% endif %}">
 
-  {# {% include "_components/header.njk" %} #}
+  {% include "_components/navbar.njk" %}
   
   <div id="main-content">
     {% block main %}{% endblock %}

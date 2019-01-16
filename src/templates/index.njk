@@ -8,5 +8,12 @@
 } %}
 
 {% block main %}
-  <h1>{{ page.title }}</h1>
+  {% include "_components/hero.njk" %}
+
+  <section class="section">
+    <div class="container">
+      <h1>{{ page.title }}</h1>
+    </div>
+  </section>
 {% endblock %}
+
