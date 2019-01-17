@@ -5,7 +5,7 @@
 .c-subscribe {
   background: rgba($color-black, 0.9);
   color: findColorInvert($color-black);
-  padding: $global-spacing-unit $global-spacing-unit-small;
+  padding: $global-spacing-unit;
   display: flex;
   align-items: center;
 
@@ -17,7 +17,6 @@
 
   .input {
     margin: 0 $global-spacing-unit-tiny;
-    border: 0;
     flex: auto;
   }
 
@@ -29,6 +28,20 @@
     &:hover {
       background-color: $white;
       color: rgba($color-black, 0.9);
+    }
+  }
+
+  .c-hero & {
+    // hero specific styles
+    @extend .is-three-quarters;
+  }
+
+  .c-footer & {
+    // footer specific styles
+    padding: inherit 0;
+
+    .input {
+      margin: 0 $global-spacing-unit-small;
     }
   }
 }

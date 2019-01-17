@@ -3,11 +3,9 @@
    ========================================================================== */
 
 .c-social {
-  padding: $global-spacing-unit $global-spacing-unit-small;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  // flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
 
   &__text {
     @include font-loader($safe-serif, $custom-serif);
@@ -15,17 +13,41 @@
     font-size: $size-4;
   }
 
-  &__icons .fab {
-    color: $white;
-  }
-
   .c-hero & {
+    // hero specific styles
     background-color: $color-brand;
     color: $white;
-
-    @include mq($from: desktop) {
-      justify-content: space-between;
-      flex-direction: row;
+    padding: $global-spacing-unit $global-spacing-unit-small;
+    align-items: center;
+    
+    &__icons {
+      margin-left: -0.25em;
+      margin-top: $global-spacing-unit-tiny;
+      
+      a {
+        color: currentColor;
+      }
     }
+    
+    @include mq($from: tablet) {
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    @include mq($from: desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+
+      &__icons {
+        margin: 0;
+      }
+    }
+  }
+
+  .c-footer & {
+    // footer specific styles
+    @extend .is-one-quarter;
+
+    
   }
 }

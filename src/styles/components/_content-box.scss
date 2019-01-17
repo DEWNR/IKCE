@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Content box
+   ========================================================================== */
+
+.c-content-box {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  overflow: hidden;
+
+  &--odd {
+    .column:first-child {
+      order: 1;
+    }
+
+    .column:last-child {
+      order: 2;
+    }
+  }
+
+  &--even {
+    background-color: $white;
+    color: findColorInvert($white);
+
+    .column:first-child {
+      order: 2;
+    }
+
+    .column:last-child {
+      order: 1;
+    }
+  }
+
+  &__image-container {
+    padding:0;
+    overflow: hidden;
+    order: 1;
+
+    .image {
+      height: 100%;
+      width: 100%;
+    }
+
+    img {
+      position: absolute;
+      min-height: 100%;
+      width: auto;
+      max-width: initial;
+    }
+  }
+
+  &__text-container {
+    padding: $global-spacing-unit;
+  }
+
+  &__title {
+    .c-content-box--odd & {
+      color: $white;
+    }
+
+    .c-content-box--even & {
+      color: $primary;
+    }
+  }
+
+  &__description {
+    p + ul {
+      margin-top: -0.75em;
+    }
+  }
+
+  &__link {
+    color: currentColor;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}

@@ -5,7 +5,7 @@
 .navbar {
   background: rgba($color-black, 0.9);
   color: findColorInvert($color-black);
-  position: fixed;
+  position: absolute;
   width: 100%;
 
   &__donate {

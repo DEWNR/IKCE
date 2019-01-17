@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+
+.section {
+  &.is-brand {
+    background-color: $color-brand;
+    color: findColorInvert($color-brand);
+  }
+
+  &.is-green {
+    background-color: $color-green;
+    color: findColorInvert($color-green);
+  }
+
+  &.is-turquoise {
+    background-color: $color-turquoise;
+    color: findColorInvert($color-turquoise);
+  }
+
+  &.is-gradient1 {
+    @include background-gradient(96deg, $color-turquoise, 28.92%, $color-green, 88.54%);
+
+    color: findColorInvert($color-turquoise);
+  }
+}

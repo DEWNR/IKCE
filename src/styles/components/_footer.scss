@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.c-footer {
+  &__subscribe {
+    background-color: $black;
+  }
+
+  &__bottom {
+    background-color: #3c3833;
+    color: findColorInvert(#3c3833);
+
+    a {
+      color: currentColor;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

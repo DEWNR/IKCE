@@ -17,3 +17,15 @@
 
   font-family: $safe-family;
 }
+
+/**
+ * CSS background gradient
+ *
+ * - Set background gradient according to design spec
+ *
+*/
+
+@mixin background-gradient($angle, $color1, $stop1, $color2, $stop2) {
+  background: $color1;
+  background: linear-gradient(#{$angle}, #{$color1} #{$stop1}, #{$color2} #{$stop2});
+}
