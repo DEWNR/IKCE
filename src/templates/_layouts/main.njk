@@ -29,7 +29,9 @@
   
   <div id="main-content">
     {% block main %}{% endblock %}
-  </div>  
+  </div>
+
+  {% include "_components/footer.njk" %}
 
   {# Any page specific javascript will go in here #}
   {% block javascript %}{% endblock %}

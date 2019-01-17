@@ -10,10 +10,30 @@
 {% block main %}
   {% include "_components/hero.njk" %}
 
-  <section class="section">
+  {# <section class="section is-brand">
     <div class="container">
-      <h1>{{ page.title }}</h1>
+      {% set section = featured %}
+      {% include "_components/content-box.njk" %}
+    </div>
+  </section> #}
+
+  
+  <section class="section is-brand">
+    {% set section = about %}
+    {% include "_components/content-box.njk" %}
+  </section>
+
+  <section class="section is-gradient1">
+    {% set section = ride %}
+    {% include "_components/content-box.njk" %}
+  </section>
+
+  <section class="section is-brand">
+    <div class="container">
+      <h2>Contact</h2>
+      Insert smart form here
     </div>
   </section>
+
 {% endblock %}
 

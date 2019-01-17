@@ -1,0 +1,45 @@
+{# content-box.njk #}
+
+{% for item in section %}
+
+  {% if item.heading %}
+    <div class="container">
+      <h2>{{ item.heading }}</h2>        
+    </div>
+  {% endif %}
+
+  {% for box in item.modules %}
+    
+    <div class="c-content-box{% if loop.length > 1 %}{% if loop.index%2 == 1 %} c-content-box--odd{% elif loop.index%2 == 0 %} c-content-box--even{% endif %}{% endif %}">
+      <div class="container">
+        <div class="columns">
+          <div class="c-content-box__image-container   column is-half">
+
+            {% if box.image.src %}
+              <figure class="image" >
+                <img src="{{ box.image.src }}" alt="{{ box.image.alt }}">
+              </figure>
+            {% endif %}
+
+          </div>
+
+          <div class="c-content-box__text-container   column is-half">
+            <h3 class="c-content-box__title">{{ box.title }}</h3>
+
+              {% if box.description %}
+                <div class="c-content-box__description   content">
+                  {{ box.description | safe }}
+                </div>
+              {% endif %}
+
+              {% if box.link.url %}
+                <a class="c-content-box__link" href="{{ box.link.url }}" {% if box.link.target %}target="{{ box.link.target }}"{% endif %}>{{ box.link.text }}</a>
+              {% endif %}
+
+          </div> {# .c-content-box__text-container #}
+        </div>
+      </div> {# .container #}  
+    </div> {# .c-content-box #}
+  {% endfor %} {# box #}
+
+{% endfor %} {# item #}
