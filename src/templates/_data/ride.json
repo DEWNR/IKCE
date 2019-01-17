@@ -1,0 +1,20 @@
+[
+  {
+    "heading": "",
+    "modules": [
+      {
+        "title": "The Great Koala Ride 2019",
+        "image": {
+          "src": "images/about-1.jpg",
+          "alt": ""
+        },
+        "description": "<p>On 21 January, a small group of cyclists lead by Phil Liggett, Tour Down Under commentator and IKCE Ambassador, rode the Great Koala Ride to raise awareness for koala research.  Click through to see our photo gallery of the day and download the Strava Art Map of the ride.</p>",
+        "link": {
+          "text": "Read more",
+          "url": "#",
+          "target": ""
+        }
+      }
+    ]
+  }
+]
