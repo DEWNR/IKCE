@@ -1,0 +1,98 @@
+[
+  {
+    "heading": "Our roles",
+    "modules": [
+      {
+        "title": "RESEARCH",
+        "image": {
+          "src": "images/featured-1.jpg",
+          "alt": ""
+        },
+        "description": "",
+        "link": {
+          "text": "",
+          "url": "",
+          "target": ""
+        }
+      },
+      {
+        "title": "LEAD",
+        "image": {
+          "src": "",
+          "alt": ""
+        },
+        "description": "",
+        "link": {
+          "text": "",
+          "url": "",
+          "target": ""
+        }
+      },
+      {
+        "title": "UNDERSTAND",
+        "image": {
+          "src": "",
+          "alt": ""
+        },
+        "description": "",
+        "link": {
+          "text": "",
+          "url": "",
+          "target": ""
+        }
+      },
+      {
+        "title": "FUND",
+        "image": {
+          "src": "",
+          "alt": ""
+        },
+        "description": "",
+        "link": {
+          "text": "",
+          "url": "",
+          "target": ""
+        }
+      },
+      {
+        "title": "COLLABORATE",
+        "image": {
+          "src": "",
+          "alt": ""
+        },
+        "description": "",
+        "link": {
+          "text": "",
+          "url": "",
+          "target": ""
+        }
+      },
+      {
+        "title": "EDUCATE",
+        "image": {
+          "src": "",
+          "alt": ""
+        },
+        "description": "",
+        "link": {
+          "text": "",
+          "url": "",
+          "target": ""
+        }
+      },
+      {
+        "title": "CONNECT",
+        "image": {
+          "src": "",
+          "alt": ""
+        },
+        "description": "",
+        "link": {
+          "text": "",
+          "url": "",
+          "target": ""
+        }
+      }
+    ]
+  }
+]

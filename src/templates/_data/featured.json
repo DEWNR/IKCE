@@ -1,0 +1,33 @@
+[
+  {
+    "heading": "",
+    "modules": [
+      {
+        "title": "The International Koala Centre of Excellence (IKCE) leads vital research into koala conservation and management.",
+        "image": {
+          "src": "images/featured-1.jpg",
+          "alt": ""
+        },
+        "description": "",
+        "link": {
+          "text": "",
+          "url": "",
+          "target": ""
+        }
+      },
+      {
+        "title": "IKCE Ambassador Teresa Palma talks koala conservation.",
+        "image": {
+          "src": "",
+          "alt": ""
+        },
+        "description": "",
+        "link": {
+          "text": "",
+          "url": "",
+          "target": ""
+        }
+      }
+    ]
+  }
+]
