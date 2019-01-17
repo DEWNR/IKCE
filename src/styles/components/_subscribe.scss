@@ -8,15 +8,20 @@
   padding: $global-spacing-unit;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   &__text {
     @include font-loader($safe-serif, $custom-serif);
 
     font-size: $size-4;
+    flex: 1 1 100%;
+    margin-right: $global-spacing-unit-tiny;
+    text-align: center;
+    margin-bottom: $global-spacing-unit-small;
   }
 
   .input {
-    margin: 0 $global-spacing-unit-tiny;
+    margin-right: $global-spacing-unit-tiny;
     flex: auto;
   }
 
@@ -31,6 +36,16 @@
     }
   }
 
+  @include mq($from: tablet) {
+    flex-wrap: nowrap;
+
+    &__text {
+      flex: 0 1 auto;
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+
   .c-hero & {
     // hero specific styles
     @extend .is-three-quarters;
@@ -40,8 +55,12 @@
     // footer specific styles
     padding: inherit 0;
 
+    &__text {
+      margin-right: $global-spacing-unit-small;
+    }
+
     .input {
-      margin: 0 $global-spacing-unit-small;
+      margin-right: $global-spacing-unit-small;
     }
   }
 }

@@ -13,33 +13,41 @@
     font-size: $size-4;
   }
 
+  &__icons {
+    margin-left: -0.25em;
+    margin-top: $global-spacing-unit-tiny;
+
+    .icon + .icon {
+      margin-left: $global-spacing-unit-tiny;
+    }
+
+    a {
+      color: currentColor;
+    }
+  }
+
   .c-hero & {
     // hero specific styles
     background-color: $color-brand;
     color: $white;
-    padding: $global-spacing-unit $global-spacing-unit-small;
+    padding: $global-spacing-unit;
     align-items: center;
-    
-    &__icons {
-      margin-left: -0.25em;
-      margin-top: $global-spacing-unit-tiny;
-      
-      a {
-        color: currentColor;
-      }
-    }
-    
+
     @include mq($from: tablet) {
       flex-direction: column;
       justify-content: center;
     }
-    
+
     @include mq($from: desktop) {
       flex-direction: row;
       justify-content: space-between;
 
       &__icons {
         margin: 0;
+
+        .icon {
+          margin: 0;
+        }
       }
     }
   }
@@ -48,6 +56,7 @@
     // footer specific styles
     @extend .is-one-quarter;
 
-    
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
