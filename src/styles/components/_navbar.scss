@@ -8,11 +8,19 @@
   position: absolute;
   width: 100%;
 
+  .columns {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .column {
+    position: relative;
+  }
+
   &__donate {
-    align-self: center;
-    margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     &-text {
       @include font-loader($safe-serif, $custom-serif);

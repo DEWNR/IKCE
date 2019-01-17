@@ -3,13 +3,19 @@
    ========================================================================== */
 
 /**
- * 1. Colors
- * 2. Typography
- * 3. Spacing
+ * 1. Paths
+ * 2. Colors
+ * 3. Typography
+ * 4. Spacing
+ * 5. Responsiveness
  *
 */
 
 /* 1. Colors
+   ========================================================================== */
+$image-path: '../images/';
+
+/* 2. Colors
    ========================================================================== */
 $color-brand: #13524e;
 $color-turquoise: #11b09b;
@@ -49,7 +55,7 @@ $turquoise: $color-turquoise;
 $green: $color-green;
 $black: $color-black;
 
-/* 2. Typography
+/* 3. Typography
    ========================================================================== */
 $safe-serif: serif;
 $custom-serif: adelle-condensed, serif;
@@ -60,7 +66,7 @@ $custom-sans-serif: 'Open Sans', sans-serif;
 $font-proxima: proxima-nova-condensed, sans-serif;
 $fa-font-path: '/fonts';
 
-/* 3. Spacing
+/* 4. Spacing
    ========================================================================== */
 $global-spacing-unit: $size-3;
 $global-spacing-unit-small: $global-spacing-unit / 2;
@@ -69,7 +75,7 @@ $global-spacing-unit-large: $global-spacing-unit + $global-spacing-unit-small;
 $global-spacing-unit-huge: $global-spacing-unit * 2;
 
 
-/* 4. Responsiveness
+/* 5. Responsiveness
    ========================================================================== */
 $mq-breakpoints: (
   tablet: $tablet,

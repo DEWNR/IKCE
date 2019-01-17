@@ -1,12 +1,25 @@
-<nav id="navbar" class="navbar is-spaced">
+<nav id="navbar" class="navbar">
   <div class="container">
+    <div class="columns is-mobile">
 
-    {% include "_components/logo.njk" %}
+      <div class="column is-one-quarter">
+        {% include "_components/logo.njk" %}      
+      </div>
 
-    <div class="navbar__donate">
-      <span class="navbar__donate-text is-size-5">Support vital koala research</span>
-      <button type="button" class="button is-turquoise is-medium">DONATE</button>
+      <div class="column is-half-tablet">
+        <div class="navbar__donate">
+          <span class="navbar__donate-text is-size-5">Support vital koala research</span>
+          <button type="button" class="button is-turquoise is-medium">DONATE</button>
+        </div>      
+      </div>
+
     </div>
+  </div>
+    
+
+
+
+
     
     {# <div id="navbarBurger" class="navbar-burger burger">
       <span></span>
@@ -15,5 +28,4 @@
     </div> #}
     {# {% include "_components/primary-navigation.njk" %} #}
 
-  </div>
 </nav>

@@ -8,6 +8,17 @@
   padding: $global-spacing-unit-small;
   position: absolute;
   top: -$navbar-padding-vertical;
+  width: 100%;
+
+  &__image {
+    background-image: url('#{$image-path}ikce-logotype--v.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: block;
+    height: 0;
+    padding-top: 100%;
+  }
 
   &__angle {
     position: absolute;
@@ -21,8 +32,5 @@
   .c-footer & {
     position: relative;
     top: -2.25em;
-
-    &__image {
-    }
   }
 }
