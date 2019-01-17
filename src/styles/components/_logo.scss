@@ -17,4 +17,12 @@
     fill: #f1f2f3;
     left: 0;
   }
+
+  .c-footer & {
+    position: relative;
+    top: -2.25em;
+
+    &__image {
+    }
+  }
 }
