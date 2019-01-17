@@ -9,6 +9,7 @@
   position: absolute;
   top: -$navbar-padding-vertical;
   width: 100%;
+  min-height: 175px;
 
   &__image {
     background-image: url('#{$image-path}ikce-logotype--v.svg');

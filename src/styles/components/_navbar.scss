@@ -21,15 +21,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     &-text {
       @include font-loader($safe-serif, $custom-serif);
 
       font-style: italic;
+      text-align: center;
+      margin-bottom: $global-spacing-unit-tiny;
     }
 
-    .button {
-      margin-left: $global-spacing-unit-small;
+    @include mq($from: tablet) {
+      flex-direction: row;
+
+      &-text {
+        margin-bottom: 0;
+        margin-right: $global-spacing-unit-tiny;
+        text-align: left;
+      }
     }
   }
+}
+
+.navbar-brand {
+  min-width: 175px;
 }
