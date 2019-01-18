@@ -5,6 +5,10 @@
 .c-footer {
   &__subscribe {
     background-color: $black;
+
+    .category_home & {
+      display: none;
+    }
   }
 
   &__bottom {

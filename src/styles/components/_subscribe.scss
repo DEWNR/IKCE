@@ -20,6 +20,11 @@
     margin-bottom: $global-spacing-unit-small;
   }
 
+  .campaign-monitor {
+    flex: auto;
+    display: flex;
+  }
+
   .input {
     margin-right: $global-spacing-unit-tiny;
     flex: auto;
