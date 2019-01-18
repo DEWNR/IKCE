@@ -10,12 +10,21 @@
 {% block main %}
   {% include "_components/hero.njk" %}
 
-  {# <section class="section is-brand">
+  <section class="section is-brand has-text-centered">
+    {% set section = featured %}
+    {% include "_components/content-box.njk" %}
+  </section>
+
+  <section class="section is-brand">
     <div class="container">
-      {% set section = featured %}
-      {% include "_components/content-box.njk" %}
+      <h2>Our roles<h2>        
     </div>
-  </section> #}
+  </section>
+
+  <section class="section is-brand-20 is-paddingless">
+    {% set section = roles %}
+    {% include "_components/icon-modules.njk" %}
+  </section>
 
   
   <section class="section is-brand">
@@ -28,10 +37,10 @@
     {% include "_components/content-box.njk" %}
   </section>
 
-  <section class="section is-brand">
+  <section class="section is-white">
     <div class="container">
       <h2>Contact</h2>
-      Insert smart form here
+      Insert open form here
     </div>
   </section>
 

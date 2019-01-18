@@ -8,6 +8,15 @@
     color: findColorInvert($color-brand);
   }
 
+  &.is-brand-20 {
+    background-color: $color-brand--40;
+  }
+
+  &.is-white {
+    background-color: $white;
+    color: findColorInvert($white);
+  }
+
   &.is-green {
     background-color: $color-green;
     color: findColorInvert($color-green);

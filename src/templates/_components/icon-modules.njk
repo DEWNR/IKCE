@@ -1,0 +1,27 @@
+{# icon-module.njk #}
+
+{% for item in section %}
+
+    <div class="container">
+      <div class="columns is-multiline is-marginless">
+
+        {% for box in item.modules %}
+        <div class="c-icon-module   column is-one-quarter {{box.class}}">
+
+          <figure class="c-icon-module__image   image" >
+            <img src="{{ box.image.src }}" alt="{{ box.image.alt }}">
+          </figure>
+
+          <h3 class="c-icon-module__title">{{ box.title }}</h3>
+
+          <div class="c-icon-module__description  content">
+            <p>{{ box.description }}</p>
+          </div>
+
+        </div>
+        {% endfor %} {# box #}
+
+      </div>
+    </div>
+
+{% endfor %} {# item #}

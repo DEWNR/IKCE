@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Content box
+   ========================================================================== */
+
+.c-icon-module {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-brand--40;
+  align-items: center;
+  text-align: center;
+  color: findColorInvert($color-brand--20);
+  padding: $global-spacing-unit $global-spacing-unit-small;
+
+  &--light {
+    background-color: $color-brand--20;
+  }
+
+  &__image {
+    flex: 0 0 30%;
+    width: 70px;
+    align-self: center;
+    display: flex;
+  }
+
+  &__title {
+    flex: 0;
+    font-size: $size-5;
+    margin-top: $global-spacing-unit-tiny;
+    color: $color-brand;
+  }
+
+  &__description {
+    flex: 1 0;
+    font-size: 90%;
+  }
+}

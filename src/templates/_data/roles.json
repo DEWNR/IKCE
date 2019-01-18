@@ -5,36 +5,10 @@
       {
         "title": "RESEARCH",
         "image": {
-          "src": "images/featured-1.jpg",
+          "src": "/images/research.svg",
           "alt": ""
         },
-        "description": "",
-        "link": {
-          "text": "",
-          "url": "",
-          "target": ""
-        }
-      },
-      {
-        "title": "LEAD",
-        "image": {
-          "src": "",
-          "alt": ""
-        },
-        "description": "",
-        "link": {
-          "text": "",
-          "url": "",
-          "target": ""
-        }
-      },
-      {
-        "title": "UNDERSTAND",
-        "image": {
-          "src": "",
-          "alt": ""
-        },
-        "description": "",
+        "description": "To conduct and coordinate research into the biology, management and conservation of the koala.",
         "link": {
           "text": "",
           "url": "",
@@ -44,10 +18,10 @@
       {
         "title": "FUND",
         "image": {
-          "src": "",
+          "src": "/images/fund.svg",
           "alt": ""
         },
-        "description": "",
+        "description": "To raise and direct funds for koala research, management and conservation",
         "link": {
           "text": "",
           "url": "",
@@ -57,10 +31,10 @@
       {
         "title": "COLLABORATE",
         "image": {
-          "src": "",
+          "src": "/images/collaborate.svg",
           "alt": ""
         },
-        "description": "",
+        "description": "To foster collaboration between scientists undertaking koala research.",
         "link": {
           "text": "",
           "url": "",
@@ -68,12 +42,25 @@
         }
       },
       {
-        "title": "EDUCATE",
+        "title": "LEAD",
         "image": {
-          "src": "",
+          "src": "/images/lead.svg",
           "alt": ""
         },
-        "description": "",
+        "description": "To provide national leadership in the development and implementation of strategies for the sustainable management of koalas and their habitat.",
+        "link": {
+          "text": "",
+          "url": "",
+          "target": ""
+        }
+      },
+      {
+        "title": "UNDERSTAND",
+        "image": {
+          "src": "/images/understand.svg",
+          "alt": ""
+        },
+        "description": "To understand the relationship between koalas and the community.",
         "link": {
           "text": "",
           "url": "",
@@ -83,10 +70,23 @@
       {
         "title": "CONNECT",
         "image": {
-          "src": "",
+          "src": "/images/connect.svg",
           "alt": ""
         },
-        "description": "",
+        "description": "To establish and grow long term relationships with supporters of koala research.",
+        "link": {
+          "text": "",
+          "url": "",
+          "target": ""
+        }
+      },
+      {
+        "title": "EDUCATE",
+        "image": {
+          "src": "/images/educate.svg",
+          "alt": ""
+        },
+        "description": "To educate the community, koala welfare and other interest groups about koala management and conservation in the wild and captivity.",
         "link": {
           "text": "",
           "url": "",
