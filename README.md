@@ -29,7 +29,12 @@ $ yarn production
 `production` will minify and uglify scss and javascript files optimize images and compile files into a 'production' folder
 
 ## Code notes
-eslint is using a slight variation on [js-standard-style](http://standardjs.com) to include semicolons at the end of blocks to ensure that there is one less thing to make us go insane.
+Eslint is using a slight variation on [js-standard-style](http://standardjs.com) to include semicolons at the end of blocks to ensure that there is one less thing to make us go insane.
+
+Sometimes imagemin will need rebuilding. To do this run the following code:
+```
+$ npm rebuild jpegtran-bin
+```
 
 Stylelint is using [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-recommended)
 
@@ -41,3 +46,4 @@ Build based on [webpack-gulp-boilerplate by shalachev](https://github.com/shalac
 * Build a site
 * Revise revving/hashing for gulp task (there has to be a cleaner way)
 * Add purgecss to reduce bloat of bulma and fontawesome
+* Revise focus for form items
