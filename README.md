@@ -1,4 +1,4 @@
-[![Project logo](./src/images/ag-logotype.svg)](https://koalacentre.org)
+[![Project logo](./src/images/ikce-logotype--v.svg)](https://koalacentre.org)
 
 [![js-standard-style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
 # International Koala Centre of Excellence :koala:
