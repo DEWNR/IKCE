@@ -1,6 +1,7 @@
 /* ==========================================================================
-   Variable overrides
+   Modal
    ========================================================================== */
 
-$section-padding: 1.5rem 1.5rem;
-$navbar-height: 4.3125rem;
+[data-modal-trigger] {
+  cursor: pointer;
+}
