@@ -10,12 +10,13 @@ const autoprefixer = require('gulp-autoprefixer');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 const data = require('gulp-data');
-const notify = require('gulp-notify');
-const plumber = require('gulp-plumber');
 const imagemin = require('gulp-imagemin');
 const gulpif = require('gulp-if');
 const jsonCombine = require('gulp-jsoncombine');
+const notify = require('gulp-notify');
 const nunjucksRender = require('gulp-nunjucks-render');
+const plumber = require('gulp-plumber');
+const replace = require('gulp-replace');
 const rev = require('gulp-rev');
 const revNapkin = require('gulp-rev-napkin');
 const sass = require('gulp-sass');
@@ -232,6 +233,15 @@ const handleRev = () => gulp
   .pipe(gulp.dest('./'));
 
 /**
+ * Handle replace
+ */
+const handleReplaceCss = () => gulp
+  .src([handlePath(paths.build, '/css/main.css')])
+  .pipe(replace('../images', '/files/assets/koala_centre/site'))
+  .pipe(replace('"/fonts', '"/assets/fonts'))
+  .pipe(gulp.dest(handlePath(paths.build, '/css/')));
+
+/**
  * Handle folder watch
  */
 const handleWatch = () => {
@@ -281,19 +291,20 @@ exports.build = gulp.series(
   handleImageOptimization,
   handleSass,
   handleScripts,
+  handleReplaceCss,
   handleRev
 );
 
 exports.default = gulp.series(
   handleClean,
   cleanGlobalTemplateFile,
+  handleImageOptimization,
+  handleFonts,
+  handleScripts,
+  handleSass,
   handleTemplateData,
   handleTemplates,
-  handleScripts,
-  handleFonts,
-  handleSass,
   gulp.parallel(
-    handleImageOptimization,
     handleWatch,
     handleReload
   )
