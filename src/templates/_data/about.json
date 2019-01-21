@@ -16,12 +16,12 @@
         }
       },
       {
-        "title": "Why do we need the International Koala Centre of Excellence?",
+        "title": "Why we need the International Koala Centre of Excellence",
         "image": {
-          "src": "images/about-1.jpg",
+          "src": "images/about-2.jpg",
           "alt": ""
         },
-        "description": "<p>We need best practice science to ensure koalas survive into the future. Disease, climate change, loss of habitat, and overcrowding bringing the risk of starvation, are key threats to koalas across Australia. Koalas are also threatened as they increasingly move into urban areas, crossing roads and visiting our backyards.</p><p>Koalas are listed as vulnerable to extinction in Australia’s eastern states. In South Australia, Koala numbers are higher and potentially, this State may have the last of the world’s significant koala populations. With that comes the responsibility to ensure the survival of the species.</p>",
+        "description": "<p>We need best practice science to ensure koalas survive into the future. Disease, climate change, loss of habitat, and overcrowding bringing the risk of starvation, are key threats to koalas across Australia. Koalas are also threatened as they increasingly move into urban areas, crossing roads and visiting our backyards.</p><p>Koalas are listed as vulnerable to extinction in Australia’s eastern states. In South Australia, Koala numbers are higher and potentially, this State may have the last of the world’s significant koala populations. With that comes the responsibility to help ensure the survival of the species.</p>",
         "link": {
           "text": "",
           "url": "",
@@ -31,10 +31,10 @@
       {
         "title": "Our research work",
         "image": {
-          "src": "images/about-1.jpg",
+          "src": "images/about-3.jpg",
           "alt": ""
         },
-        "description": "<p>We’re partnering with scientists, business and community organisations, State and Federal governments, fauna rescue groups and others in Australia and around the world to support koala conservation.</p><p>Our research is focused on three areas:</p><ul><li>Koala health and wellbeing</li><li>Koalas in the landscape Koalas in the landscape Koalas in the landscape Koalas in the landscape</li><li>Koalas in the community.</li></ul>",
+        "description": "<p>We’re partnering with scientists, business and community organisations, State and Federal governments, fauna rescue groups and others in Australia and around the world to support koala conservation.</p><p>Our research is focused on three areas:</p><ul><li>Koala health and wellbeing</li><li>Koalas in the landscape</li><li>Koalas in the community.</li></ul>",
         "link": {
           "text": "",
           "url": "",
