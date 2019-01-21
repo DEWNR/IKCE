@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="132" height="132" viewBox="0 0 132 132">
+  <defs>
+    <style>
+      .a, .c, .d {
+        fill: none;
+      }
+
+      .b {
+        clip-path: url(#a);
+      }
+
+      .c, .d {
+        stroke: #fff;
+      }
+
+      .c {
+        stroke-width: 6.64px;
+      }
+
+      .d {
+        stroke-width: 5.68px;
+      }
+    </style>
+    <clipPath id="a" transform="translate(0)">
+      <rect class="a" width="132" height="132"/>
+    </clipPath>
+  </defs>
+  <title>Asset 1</title>
+  <g class="b">
+    <circle class="c" cx="66" cy="66" r="62.68"/>
+    <path class="d" d="M57.2,29.93s-5.7-5-5.7,2.59V99.41s0,7.57,5.7,2.58L92.69,71s5.7-5,0-10Z" transform="translate(0)"/>
+  </g>
+</svg>
