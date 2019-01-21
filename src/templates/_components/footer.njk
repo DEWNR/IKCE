@@ -3,23 +3,28 @@
     <div class="container">
       <div class="columns">
 
-        {% include "_components/subscribe.njk" %} 
+        {% include "_components/subscribe.njk" %}
 
       </div>
     </div>
   </div>
   <div class="c-footer__bottom   section">
     <div class="container">
-      <div class="columns">
-        <div class="column is-one-fifth">
+      <div class="columns is-mobile is-multiline">
+        <div class="column is-half-mobile is-one-fifth-tablet">
           {% include "_components/logo.njk" %}
         </div>
         {% include "_components/social.njk" %}
-        <div class="column is-one-quarter">
-          Logos
+        <div class="c-footer__partner-logos   column is-full-mobile is-one-quarter-tablet is-offset-one-quarter-tablet">
+          <a href="https://southaustralia.com">
+            <img src="images/brand-adelaide-rev.svg" alt="">
+          </a>
+          <a href="https://www.environment.sa.gov.au">
+            <img src="images/gosa-vertical-rev.svg" alt="">
+          </a>
         </div>
       </div>
-      <p class="is-size-7">© Copyright, Department for Environment and Water 2019 | <a href="#" target="_blank">Disclaimer</a> | <a href="#">Privacy</a> | <a href="#">Accessibility</a></p>
+      <p class="is-size-7"><a href="https://www.environment.sa.gov.au/copyright" target="_blank">© Copyright, Department for Environment and Water 2019</a> | <a href="https://www.environment.sa.gov.au/disclaimer" target="_blank">Disclaimer</a> | <a href="https://www.environment.sa.gov.au/privacy-statement">Privacy</a> | <a href="https://www.environment.sa.gov.au/accessibility">Accessibility</a></p>
     </div>
   </div>
 </footer>

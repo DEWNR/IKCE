@@ -13,14 +13,7 @@
     <div class="c-content-box{% if loop.length > 1 %}{% if loop.index%2 == 1 %} c-content-box--odd{% elif loop.index%2 == 0 %} c-content-box--even{% endif %}{% endif %}">
       <div class="container">
         <div class="columns">
-          <div class="c-content-box__image-container   column is-half">
-
-            {% if box.image.src %}
-              <figure class="image" >
-                <img src="{{ box.image.src }}" alt="{{ box.image.alt }}">
-              </figure>
-            {% endif %}
-
+          <div class="c-content-box__image-container   column is-half" style="background-image: url('{{ box.image.src }}')">
           </div>
 
           <div class="c-content-box__text-container   column is-half">

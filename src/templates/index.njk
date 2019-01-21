@@ -1,23 +1,50 @@
 {% extends "_layouts/main.njk" %}
 
 {% set page = {
-  "title": "Hello world",
+  "title": "Home",
   "bodyClass": "category_home",
   "url": "",
-  "image": ""
+  "image": "images/home-hero.jpg"
 } %}
 
 {% block main %}
   {% include "_components/hero.njk" %}
 
   <section class="section is-brand has-text-centered">
-    {% set section = featured %}
-    {% include "_components/content-box.njk" %}
+    <div class="c-content-box">
+      <div class="container">
+        <div class="columns">
+          <div class="c-content-box__image-container   column is-half" style="background-image: url('images/featured-1.jpg')">
+          </div>
+
+          <div class="c-content-box__text-container   column is-half">
+            <h3 class="c-content-box__title">The International Koala Centre of Excellence (IKCE) leads vital research into koala conservation and management.</h3>
+          </div> 
+        </div>
+      </div>   
+    </div>   
+    
+    <div class="c-content-box is-white is-reverse">
+      <div class="container">
+        <div class="columns">
+          <div class="c-content-box__image-container   column is-half" style="background-image: url('images/featured-2.jpg')" data-modal-trigger data-modal="9exdqYcEJnQ">
+          </div>
+
+          <div class="c-content-box__text-container  column is-half">
+            <h3 class="c-content-box__title">IKCE Ambassador Teresa Palmer talks koala conservation.</h3>
+          </div> 
+        </div>
+      </div>   
+    </div> 
+   
+
+ 
+
   </section>
 
   <section class="section is-brand">
     <div class="container">
-      <h2>Our roles<h2>        
+      <h2>Our roles</h2>
     </div>
   </section>
 
@@ -26,7 +53,17 @@
     {% include "_components/icon-modules.njk" %}
   </section>
 
-  
+  <section class="section is-brand">
+    <div class="container">
+      <h2>Our Patron and Ambassadors</h2>
+    </div>
+  </section>
+
+  <section class="section is-black-80 is-paddingless">
+    {% set section = ambassadors %}
+    {% include "_components/profile-modules.njk" %}
+  </section>
+
   <section class="section is-brand">
     {% set section = about %}
     {% include "_components/content-box.njk" %}
@@ -43,6 +80,8 @@
       Insert open form here
     </div>
   </section>
+
+  
 
 {% endblock %}
 
