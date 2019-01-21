@@ -26,6 +26,7 @@ export function campaignMonitorForm () {
 
   // Submit function
   campaignMonitor.querySelector('.js-cm-submit-button').addEventListener('click', (event) => {
+    event.preventDefault();
     validate();
 
     if (emailComplete) {
