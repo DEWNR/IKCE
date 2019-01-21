@@ -54,7 +54,8 @@
 
   .c-footer & {
     // footer specific styles
-    @extend .is-one-quarter;
+    @extend .is-half-mobile;
+    @extend .is-one-quarter-tablet;
 
     flex-direction: column;
     justify-content: flex-start;

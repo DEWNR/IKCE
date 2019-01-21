@@ -32,4 +32,9 @@
 
     color: findColorInvert($color-turquoise);
   }
+
+  &.is-black-80 {
+    background-color: $color-black--80;
+    color: findColorInvert($color-black--80);
+  }
 }

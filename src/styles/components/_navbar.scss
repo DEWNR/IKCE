@@ -23,6 +23,10 @@
     justify-content: center;
     flex-direction: column;
 
+    .category_donate & {
+      display: none;
+    }
+
     &-text {
       @include font-loader($safe-serif, $custom-serif);
 

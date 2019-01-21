@@ -11,9 +11,10 @@
  *
 */
 
-/* 1. Colors
+/* 1. Paths
    ========================================================================== */
-$image-path: '../images/';
+$image-path: '../images';
+$fa-font-path: '/fonts';
 
 /* 2. Colors
    ========================================================================== */
@@ -64,7 +65,6 @@ $safe-sans-serif: sans-serif;
 $custom-sans-serif: 'Open Sans', sans-serif;
 
 $font-proxima: proxima-nova-condensed, sans-serif;
-$fa-font-path: '/fonts';
 
 /* 4. Spacing
    ========================================================================== */

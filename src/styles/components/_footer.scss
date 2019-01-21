@@ -23,4 +23,22 @@
       }
     }
   }
+
+  &__partner-logos {
+    a + a img {
+      margin-left: $global-spacing-unit-small;
+    }
+
+    a:first-child img {
+      width: 80px;
+    }
+
+    a:last-child img {
+      width: 105px;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
 }

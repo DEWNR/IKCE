@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Profile modules
+   ========================================================================== */
+
+.c-profile-module {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  padding-bottom: $global-spacing-unit;
+
+  &__image {
+    margin-top: -$column-gap;
+    margin-left: -$column-gap;
+    margin-right: -$column-gap;
+  }
+
+  &__title {
+    font-size: $size-5;
+    margin-bottom: 0;
+    margin-top: $global-spacing-unit-tiny;
+  }
+
+  &__description {}
+}
