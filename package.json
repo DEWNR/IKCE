@@ -4,7 +4,7 @@
   "description": "Site templates for DEW's IKCE website.",
   "homepage": "https://www.koalacentre.org",
   "engines": {
-    "node": ">=10.14.2"
+    "node": ">=10.14.1"
   },
   "scripts": {
     "start": "gulp --gulpfile config/gulp-config.js",
