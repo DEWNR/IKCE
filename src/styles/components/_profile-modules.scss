@@ -13,6 +13,24 @@
     margin-top: -$column-gap;
     margin-left: -$column-gap;
     margin-right: -$column-gap;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      /* IE10+ CSS styles go here */
+      height: calc(11vw + 122px);
+
+      @include mq($from: tablet) {
+        height: calc(11vw + 150px);
+      }
+      @include mq($from: desktop) {
+        height: calc(11vw + 120px);
+      }
+      @include mq($from: widescreen) {
+        height: calc(11vw + 150px);
+      }
+      @include mq($from: fullhd) {
+        height: 338px;
+      }
+    }
   }
 
   &__title {
