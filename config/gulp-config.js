@@ -186,6 +186,7 @@ const handleImageOptimization = () => gulp
       imagemin.svgo({
         plugins: [
           { cleanupAttrs: true },
+          { removeViewBox: false },
           { removeDoctype: true },
           { removeXMLProcInst: true },
           { removeComments: true },
