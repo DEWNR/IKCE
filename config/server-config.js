@@ -28,7 +28,6 @@ module.exports = {
   reloadDebounce: 1000,
   logPrefix: 'server',
   open: 'local',
-  browser: 'google chrome',
   cors: true,
   notify: false
 };
