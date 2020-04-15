@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "gulp --gulpfile config/gulp-config.js",
-    "production": "cross-env NODE_ENV=production yarn start build"
+    "production": "cross-env NODE_ENV=production npm run start build"
   },
   "repository": {
     "type": "git",
