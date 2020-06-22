@@ -1,17 +1,72 @@
 {% extends "_layouts/main.njk" %}
 
 {% set page = {
-  "title": "Donate",
+  "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eveniet impedit inventore optio rerum sapiente vel ex ipsa nulla obcaecati.",
   "bodyClass": "category_donate",
   "url": "",
-  "image": "images/home-hero.jpg"
+  "image": "images/home-hero-refresh.jpg"
 } %}
 
 {% block main %}
   {% include "_components/banner.njk" %}
-  <section class="section">
+  <section class="section is-grey-darker">
     <div class="container">
-      
+      <div class="columns is-multiline">
+        <div class="column is-12">
+          <h2 class="section__heading">IKCE International Patrons</h2>
+        </div>
+        {% for profile in internationalPatrons %}
+          <div class="column is-6">
+            {% include "_components/profile-modules.njk" %}          
+          </div>
+        {% endfor %}
+      </div>
+      <div class="columns is-multiline">
+        <div class="column is-12">
+          <h2 class="section__heading">IKCE Ambassadors</h2>
+        </div>
+        {% for profile in ambassadors %}
+          <div class="column is-6">
+            {% include "_components/profile-modules.njk" %}          
+          </div>
+        {% endfor %}
+      </div>
+      <div class="columns is-multiline">
+        <div class="column is-12">
+          <h2 class="section__heading">IKCE Board Members</h2>
+        </div>
+        {% for profile in boardMembers %}
+          <div class="column is-6">
+            {% include "_components/profile-modules.njk" %}          
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-white">
+    <div class="container">
+      <div class="columns is-multiline">
+        <div class="column is-12">
+          <h2 class="section__heading">Our Partners</h2>
+        </div>
+        {% for logo in partners %}
+          <div class="column is-3">
+            <img src="{{ logo.url }}" alt="{{ logo.alt }}">
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="columns is-multiline">
+        <div class="column is-12">
+          <h2 class="section__heading">Research Organisations</h2>
+        </div>
+        {% for logo in researchOrganisations %}
+          <div class="column is-3">
+            <img src="{{ logo.url }}" alt="{{ logo.alt }}">
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </section>
 {% endblock %}

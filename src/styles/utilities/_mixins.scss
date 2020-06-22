@@ -29,3 +29,54 @@
   background: $color1;
   background: linear-gradient(#{$angle}, #{$color1} #{$stop1}, #{$color2} #{$stop2});
 }
+
+@mixin hamburger($dimensions) {
+  cursor: pointer;
+  display: block;
+  height: $dimensions;
+  position: relative;
+  width: $dimensions;
+  background-color: transparent;
+
+  span {
+    $width: 28px;
+    background-color: currentColor;
+    display: block;
+    height: 4px;
+    left: calc(50% - (#{$width}/2));
+    position: absolute;
+    border-radius: 1px;
+    transform-origin: center;
+    transition-duration: $speed;
+    transition-property: background-color, opacity, transform;
+    transition-timing-function: $easing;
+    width: $width;
+
+    &:nth-child(1) {
+      top: calc(50% - 11px);
+    }
+    &:nth-child(2) {
+      top: calc(50% - 1px);
+    }
+    &:nth-child(3) {
+      top: calc(50% + 9px);
+    }
+  }
+  &:hover {
+    background-color: transparent;
+  }
+  // Modifers
+  &.is-active {
+    span {
+      &:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+      }
+    }
+  }
+}

@@ -2,30 +2,26 @@
   <div class="container">
     <div class="columns is-mobile">
 
-      <div class="column is-one-quarter navbar-brand">
+      <div class="column is-2 navbar-brand">
         {% include "_components/logo.njk" %}      
       </div>
 
-      <div class="column is-half-desktop">
+      <div id="primary-navigation" class="column is-hidden-touch is-half-desktop">
+        {% include "_components/primary-navigation.njk" %}
+      </div>
+
+      <div class="column is-hidden-touch is-quarter-desktop">
         <div class="navbar__donate">
-          <span class="navbar__donate-text is-size-5">Support vital koala research</span>
+          <span class="navbar__donate-text is-size-5">Support vital <br>koala research</span>
           <button type="button" class="button is-turquoise is-medium">DONATE</button>
         </div>      
       </div>
 
+      <div id="navbarBurger" class="navbar-burger burger is-hidden-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </div>
-    
-
-
-
-
-    
-    {# <div id="navbarBurger" class="navbar-burger burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div> #}
-    {# {% include "_components/primary-navigation.njk" %} #}
-
 </nav>

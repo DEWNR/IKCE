@@ -1,8 +1,7 @@
-<nav class="c-primary-navigation">
-  <ul>
+<nav class="primary-navigation">
+  <ul class="primary-navigation__list">
     {% for item in primaryNavigation %}
-      <li><a href="#">{{ item.title }}</a></li>
+      <li class="primary-navigation__item"><a class="primary-navigation__link" href="#">{{ item.title }}</a></li>
     {% endfor %}
-  </ul>
-  
+  </ul>  
 </nav>

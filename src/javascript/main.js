@@ -1,6 +1,7 @@
 import './font-loader';
 import { campaignMonitorForm } from './subscribe';
 import { activateModal } from './modal';
+import './hamburger';
 /**
  * Immediately invoked functions
  */

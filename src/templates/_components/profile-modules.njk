@@ -1,27 +1,12 @@
 {# profile-module.njk #}
-
-{% for item in section %}
-
-    <div class="container">
-      <div class="columns is-mobile is-multiline is-marginless">
-
-        {% for box in item.modules %}
-        <div class="c-profile-module   column is-half-mobile is-one-quarter-tablet">
-
-          <figure class="c-profile-module__image   image" >
-            <img src="{{ box.image.src }}" alt="{{ box.image.alt }}">
-          </figure>
-
-          <h3 class="c-profile-module__title">{{ box.title }}</h3>
-
-          <div class="c-profile-module__description  content">
-            <p>{{ box.description }}</p>
-          </div>
-
-        </div>
-        {% endfor %} {# box #}
-
-      </div>
-    </div>
-
-{% endfor %} {# item #}
+<div class="c-profile-module">
+  <div class="c-profile-module__image-container">
+    <img class="c-profile-module__image" src="{{ profile.image }}" alt="">
+  </div>
+  <div class="c-profile-module__text-container">
+    <span class="c-profile-module__name">{{ profile.name }}{% if profile.suffix %}, <br>{{ profile.suffix }}{% endif %}</span>
+    {% if profile.bio %}
+      <span class="c-profile-module__bio">{{ profile.bio }}</span>
+    {% endif %}
+  </div>
+</div>

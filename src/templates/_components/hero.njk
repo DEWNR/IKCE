@@ -1,16 +1,12 @@
-<section class="c-hero   section" style="background-image: url('{{ page.image }}')">
-  <div class="container">
-
-    <div class="columns">
-      <div class="c-hero__callout   column is-one-quarter is-offset-three-quarters">
-        <h2 class="is-marginless test">Help ensure the future of the koala</h2>
+<section class="c-hero" style="background-image: url('{{ page.image }}')">
+  <div class="c-hero__overlay">
+  </div>
+  
+  <div class="c-hero__text section">
+    <div class="container">
+      <div class="column">
+        <h2 class="is-h1">Help ensure the future of the koala</h2>
       </div>
     </div>
-
-    <div class="columns">
-      {% include "_components/subscribe.njk" %}
-      {% include "_components/social.njk" %}
-    </div>
-    
   </div>
 </section>

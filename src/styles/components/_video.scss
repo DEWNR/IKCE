@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Video
+   ========================================================================== */
+.c-video {
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  padding-top: calc((9 / 16) * 100%);
+
+  &::before {
+    display: block;
+    content: "";
+    width: 100%;
+    background: #000;
+    opacity: 0;
+    transition-duration: $speed;
+    transition-property: opacity;
+    transition-timing-function: $easing;
+  }
+
+  &::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 100px;
+    height: 0;
+    padding-top: calc((9 / 16) * 100px);
+    background: url('#{$image-path}/youtube-play.svg') no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    opacity: 0.6;
+    filter: hue-rotate(0);
+    transition-duration: $speed;
+    transition-property: opacity, filter;
+    transition-timing-function: $easing;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0.6;
+    }
+
+    &::after {
+      opacity: 1;
+      filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+    }
+  }
+}

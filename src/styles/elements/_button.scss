@@ -2,13 +2,18 @@
    Button
    ========================================================================== */
 
-.button {
+@mixin button {
   @include font-loader($safe-sans-serif, $font-proxima);
 
   text-transform: uppercase;
   line-height: 1.6;
   border-radius: 0;
   border-width: 2px;
+  text-decoration: none;
+}
+
+.button {
+  @include button;
 
   &.is-turquoise {
     background-color: $color-turquoise;

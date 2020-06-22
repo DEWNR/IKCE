@@ -49,9 +49,14 @@
       margin-bottom: 0;
       text-align: left;
     }
+
+    .input {
+      max-width: 400px;
+      margin-left: auto;
+    }
   }
 
-  .c-hero & {
+  .sub-social & {
     // hero specific styles
     @extend .is-three-quarters;
   }

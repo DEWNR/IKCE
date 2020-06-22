@@ -1,0 +1,21 @@
+[
+  {
+    "heading": "Latest IKCE news",
+    "modules": [
+      {
+        "title": "Kangaroo Island koalas rescued",
+        "image": {
+          "src": "images/bike.jpg",
+          "alt": ""
+        },
+        "description": "<p>sixteen aditional koalas have been translocated from bushfire-affected Kangaroo Island taking the total to 28. They will be housed at Clealand Wildlife Park to add to the recently established disease-free insurance population.</p>",
+        "link": {
+          "text": "Read more",
+          "url": "#",
+          "target": ""
+        },
+        "nopad": true
+      }
+    ]
+  }
+]

@@ -1,110 +1,37 @@
 [
-  {
-    "modules": [
       {
-        "title": "Ceawlin Thynn, Viscount Weymouth",
-        "image": {
-          "src": "/images/ceawlin-thynn.jpg",
-          "alt": ""
-        },
-        "description": "Chairman, Longleat Enterprises (Longleat Safari Park)",
-        "link": {
-          "text": "",
-          "url": "",
-          "target": ""
-        }
+        "name": "Teresa Palmer",
+        "image": "/images/teresa-palmer.jpg",
+        "bio": "Actress, Writer, Producer and Director"
       },
       {
-        "title": "Teresa Palmer",
-        "image": {
-          "src": "/images/teresa-palmer.jpg",
-          "alt": ""
-        },
-        "description": "Actress, Writer, Producer and Director",
-        "link": {
-          "text": "",
-          "url": "",
-          "target": ""
-        }
+        "name": "Phil Liggett",
+        "image": "/images/phil-liggett.jpg",
+        "bio": "Public Commentator (Tour Down Under) and Conservation Advocate"
       },
       {
-        "title": "Phil Liggett",
-        "image": {
-          "src": "/images/phil-liggett.jpg",
-          "alt": ""
-        },
-        "description": "Public Commentator (Tour Down Under) and Conservation Advocate",
-        "link": {
-          "text": "",
-          "url": "",
-          "target": ""
-        }
+        "name": "Trish Liggett",
+        "image": "/images/trish-liggett.jpg",
+        "bio": "Wildlife and Conservation Advocate"
       },
       {
-        "title": "Trish Liggett",
-        "image": {
-          "src": "/images/trish-liggett.jpg",
-          "alt": ""
-        },
-        "description": "Wildlife and Conservation Advocate",
-        "link": {
-          "text": "",
-          "url": "",
-          "target": ""
-        }
+        "name": "Adam Hills",
+        "image": "/images/adam-hills.jpg",
+        "bio": "Entertainer (Comedian)"
       },
       {
-        "title": "Adam Hills",
-        "image": {
-          "src": "/images/adam-hills.jpg",
-          "alt": ""
-        },
-        "description": "Entertainer (Comedian)",
-        "link": {
-          "text": "",
-          "url": "",
-          "target": ""
-        }
+        "name": "Parry Agius",
+        "image": "/images/parry-agius.jpg",
+        "bio": "Community and Business Leader"
       },
       {
-        "title": "Parry Agius",
-        "image": {
-          "src": "/images/parry-agius.jpg",
-          "alt": ""
-        },
-        "description": "Community and Business Leader",
-        "link": {
-          "text": "",
-          "url": "",
-          "target": ""
-        }
+        "name": "Melanie Cooper",
+        "image": "/images/melanie-cooper.jpg",
+        "bio": "Director of Finance and Corporate Affairs, Coopers Brewery Ltd"
       },
       {
-        "title": "Melanie Cooper",
-        "image": {
-          "src": "/images/melanie-cooper.jpg",
-          "alt": ""
-        },
-        "description": "Director of Finance and Corporate Affairs, Coopers Brewery Ltd",
-        "link": {
-          "text": "",
-          "url": "",
-          "target": ""
-        }
-      },
-      {
-        "title": "Jeremy Boot",
-        "image": {
-          "src": "/images/jeremy-boot.jpg",
-          "alt": ""
-        },
-        "description": "Australian Wildlife Artist",
-        "link": {
-          "text": "",
-          "url": "",
-          "target": ""
-        }
+        "name": "Jeremy Boot",
+        "image": "/images/jeremy-boot.jpg",
+        "bio": "Australian Wildlife Artist"
       }
-    ]
-  }
 ]

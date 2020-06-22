@@ -4,40 +4,32 @@
 
 .c-profile-module {
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  text-align: center;
+  flex-direction: row;
+  align-content: flex-start;
   padding-bottom: $global-spacing-unit;
 
-  &__image {
-    margin-top: -$column-gap;
-    margin-left: -$column-gap;
-    margin-right: -$column-gap;
-
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      /* IE10+ CSS styles go here */
-      height: calc(11vw + 122px);
-
-      @include mq($from: tablet) {
-        height: calc(11vw + 150px);
-      }
-      @include mq($from: desktop) {
-        height: calc(11vw + 120px);
-      }
-      @include mq($from: widescreen) {
-        height: calc(11vw + 150px);
-      }
-      @include mq($from: fullhd) {
-        height: 338px;
-      }
-    }
+  &__image-container {
+    width: calc((1 / 3) * 100%);
+    height: auto;
+    filter: grayscale(10);
   }
 
-  &__title {
+  &__text-container {
+    padding-left: $global-spacing-unit-small;
+    padding-top: $global-spacing-unit-tiny;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-weight: bold;
     font-size: $size-5;
-    margin-bottom: 0;
+    line-height: 1.2;
+  }
+
+  &__bio {
+    font-size: $size-6;
+    width: 30ch;
     margin-top: $global-spacing-unit-tiny;
   }
-
-  &__description {}
 }

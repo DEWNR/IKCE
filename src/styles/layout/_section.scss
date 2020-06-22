@@ -6,35 +6,77 @@
   &.is-brand {
     background-color: $color-brand;
     color: findColorInvert($color-brand);
+
+    .section__heading {
+      color: findColorInvert($color-brand);
+    }
   }
 
   &.is-brand-20 {
     background-color: $color-brand--40;
+
+    .section__heading {
+      color: findColorInvert($color-brand);
+    }
   }
 
   &.is-white {
     background-color: $white;
     color: findColorInvert($white);
+
+    .section__heading {
+      color: $color-green;
+    }
   }
 
   &.is-green {
     background-color: $color-green;
     color: findColorInvert($color-green);
+
+    .section__heading {
+      color: findColorInvert($color-green);
+    }
   }
 
   &.is-turquoise {
     background-color: $color-turquoise;
     color: findColorInvert($color-turquoise);
+
+    .section__heading {
+      color: findColorInvert($color-turquoise);
+    }
   }
 
   &.is-gradient1 {
     @include background-gradient(96deg, $color-turquoise, 28.92%, $color-green, 88.54%);
 
     color: findColorInvert($color-turquoise);
+
+    .section__heading {
+      color: white;
+    }
   }
 
   &.is-black-80 {
     background-color: $color-black--80;
     color: findColorInvert($color-black--80);
+    
+    .section__heading {
+      color: findColorInvert($color-black);
+    }
+  }
+
+  &.is-grey-darker {
+    background-color: $color-grey-darker;
+    color: findColorInvert($color-grey-darker);
+    
+    .section__heading {
+      color: $color-green;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 2.5rem;
+    color: $color-brand;
   }
 }

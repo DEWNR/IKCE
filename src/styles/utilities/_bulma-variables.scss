@@ -2,5 +2,22 @@
    Variable overrides
    ========================================================================== */
 
-$section-padding: 1.5rem 1.5rem;
+// Navbar
+// -----------------------------------------------------------------------------
 $navbar-height: 4.3125rem;
+$navbar-item-color: #ffffff;
+
+
+$section-padding: 1.5rem 1.5rem;
+// The container horizontal gap, which acts as the offset for breakpoints
+$gap: 32px;
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 769px;
+// 960px container + 4rem
+$desktop: 960px + (2 * $gap);
+// 1152px container + 4rem
+$widescreen: 1120px + (2 * $gap);
+$widescreen-enabled: true;
+// 1344px container + 4rem
+$fullhd: 1120px + (2 * $gap);
+$fullhd-enabled: true;

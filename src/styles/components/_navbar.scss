@@ -22,17 +22,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-    .category_donate & {
-      display: none;
-    }
-
+    
     &-text {
       @include font-loader($safe-serif, $custom-serif);
-
+      
       font-style: italic;
       text-align: center;
       margin-bottom: $global-spacing-unit-tiny;
+      padding-right: $global-spacing-unit-small;
     }
 
     @include mq($from: tablet) {
@@ -49,4 +46,12 @@
 
 .navbar-brand {
   min-width: 175px;
+  margin-left: $column-gap;
+}
+
+.navbar-burger {
+  margin-right: (-$column-gap);
+  z-index: 999;
+
+  @include hamburger($navbar-height);
 }

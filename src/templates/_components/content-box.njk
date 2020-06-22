@@ -4,13 +4,13 @@
 
   {% if item.heading %}
     <div class="container">
-      <h2>{{ item.heading }}</h2>        
+      <h2 class="section__heading color-brand">{{ item.heading }}</h2>        
     </div>
   {% endif %}
 
   {% for box in item.modules %}
     
-    <div class="c-content-box{% if loop.length > 1 %}{% if loop.index%2 == 1 %} c-content-box--odd{% elif loop.index%2 == 0 %} c-content-box--even{% endif %}{% endif %}">
+    <div class="c-content-box{% if loop.length > 1 %}{% if loop.index%2 == 1 %}{% elif loop.index%2 == 0 %} is-reverse{% endif %}{% endif %}{% if box.nopad %} c-content-box--nopad{% endif %}">
       <div class="container">
         <div class="columns">
           <div class="c-content-box__image-container   column is-half" style="background-image: url('{{ box.image.src }}')">
@@ -26,7 +26,7 @@
               {% endif %}
 
               {% if box.link.url %}
-                <a class="c-content-box__link" href="{{ box.link.url }}" {% if box.link.target %}target="{{ box.link.target }}"{% endif %}>{{ box.link.text }}</a>
+                <a class="c-content-box__link{% if box.link.button %} button is-green{% endif %}" href="{{ box.link.url }}" {% if box.link.target %}target="{{ box.link.target }}"{% endif %}>{{ box.link.text }}</a>
               {% endif %}
 
           </div> {# .c-content-box__text-container #}

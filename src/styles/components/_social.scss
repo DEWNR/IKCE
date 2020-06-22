@@ -26,7 +26,7 @@
     }
   }
 
-  .c-hero & {
+  .sub-social & {
     // hero specific styles
     background-color: $color-brand;
     color: $white;
@@ -51,13 +51,10 @@
       }
     }
   }
+}
 
-  .c-footer & {
-    // footer specific styles
-    @extend .is-half-mobile;
-    @extend .is-one-quarter-tablet;
-
-    flex-direction: column;
-    justify-content: flex-start;
+@include mq($from: desktop) {
+  .sub-social {
+    margin-bottom: 20px;
   }
 }

@@ -3,17 +3,10 @@
    ========================================================================== */
 
 .c-footer {
-  &__subscribe {
-    background-color: $black;
-
-    .category_home & {
-      display: none;
-    }
-  }
 
   &__bottom {
-    background-color: #3c3833;
-    color: findColorInvert(#3c3833);
+    background-color: $color-grey-darker;
+    color: findColorInvert($color-grey-darker);
 
     a {
       color: currentColor;
